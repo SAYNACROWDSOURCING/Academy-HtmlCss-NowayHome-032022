@@ -1,0 +1,81 @@
+:root{
+    --primary-ad-color: #114c92;
+    --black-ad-color: #000000;
+    --white-ad-color: #ffffff;
+}
+
+
+/* LA partie Hero de la Page HEROS */
+
+
+#hero{
+    background-image: url("../img/img19.png");
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* La section Valeurs de la Page Heros */
+#valeurs{
+    background-color: var(--primary-ad-color);
+    color: var(--white-ad-color);
+    padding: 3em;
+}
+#valeurs .valeurs-head{
+    margin-bottom: 4em;
+}
+#valeurs h1{
+    font-family: 'far_from_homecomingregular';
+    font-size: 2em;
+    font-weight: 100;
+}
+#valeurs .valeurs-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#valeurs .valeurs-body .text{
+    padding-right: 2em;
+    font-size: 0.8em;
+    font-weight: 200;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#valeurs .valeurs-body .text p{
+    margin-bottom: 1em;
+}
+
+
+
+/* mobile hero */
+
+@media screen and (max-width: 600px) {
+    #valeurs .valeurs-body{
+        display: block;
+    }
+    #valeurs{
+        text-align: center;
+    }
+    #valeurs .valeurs-body .text{
+        padding-right: 0;
+        text-align: center;
+    }
+
+    #valeurs .video iframe{
+        width: 300px;
+    }
+    #valeurs h1{
+        line-height: 1.1em;
+        padding-bottom: 10px;
+    }
+
+    #valeurs h3{
+        font-size: 0.9em;
+    }
+
+}

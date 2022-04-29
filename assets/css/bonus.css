@@ -1,0 +1,38 @@
+:root{
+    --primary-ad-color: #b11313;
+    --black-ad-color: #000000;
+    --white-ad-color: #ffffff;
+}
+
+
+/* La partie Hero de la page Bonus */
+
+
+#hero{
+    background-image: url("../img/img35.png");
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#hero .box{
+    top: 55%;
+}
+
+/* Mobile version footer2 page Bonus */
+
+@media screen and (max-width:600px) {
+    .conteneur{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .brand-mobile{
+        background-color: var(--primary-ad-color);
+        padding: 20px 40px;
+    }
+
+    .box{
+        padding-left: 40px;
+    }
+}

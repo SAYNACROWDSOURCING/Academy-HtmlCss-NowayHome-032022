@@ -1,0 +1,190 @@
+:root{
+    --primary-ad-color: #114c92;
+    --black-ad-color: #000000;
+    --white-ad-color: #ffffff;
+    --red-color:#b11313;
+}
+
+
+/* LA partie Hero de la Page HEROS */
+
+
+#hero{
+    background-image: url("../img/img19.png");
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Design de la partie Valeurs */
+
+#valeurs, #heros-info, #entourage{
+    background-color: var(--primary-ad-color);
+    color: var(--white-ad-color);
+    padding: 3em;
+}
+#valeurs .valeurs-head{
+    margin-bottom: 4em;
+}
+#valeurs h1{
+    font-family: 'far_from_homecomingregular';
+    font-size: 2em;
+    font-weight: 100;
+}
+
+#valeurs .text, #heros-info .text{
+    padding-right: 2em;
+    font-size: 0.9em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Design de la section fondations */
+
+#fondations{
+    background-image: url(../img/img20.png);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#fondations h1{
+    font-family: 'far_from_homecomingregular';
+    font-size: 3em;
+    padding-top: 1.5em;
+}
+
+/* La partie Design de son Entourage */
+
+#entourage h1{
+    font-family: 'far_from_homecomingregular';
+}
+
+#entourage .entourage-image2{
+    margin-top: -100px;
+    margin-left: 200px;
+}
+
+#entourage .entourage-text{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+/* Design partie avengers */
+
+#avengers{
+    background-color: var(--red-color);
+    background-image: url(../img/img32.png);
+    background-size: 675px;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+#avengers h1{
+    font-family: 'far_from_homecomingregular';
+}
+#avengers .avengers-text{
+    text-align: justify;
+    margin-left: 0;
+    font-size: 13px;
+}
+
+.avengers-img{
+    width: 200px;
+    margin: 10px;
+}
+
+/* Design Partie Univers */
+
+#univers{
+    background-image: url(../img/img33.png);
+    background-color: var(--primary-ad-color);
+    height: 630px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#univers h3{
+    font-family: 'far_from_homecomingregular';
+}
+
+#univers .univers-content{
+    width: 500px;
+    background-color: #114b9298;
+    padding: 15px 35px;
+    position: relative;
+    left: 50%;
+    top: 3%;
+}
+#univers .univers-text{
+    text-align: justify;
+    font-size: 15px;
+}
+
+
+/* Design Mobile */
+
+
+@media screen and (max-width: 600px) {
+    .valeurs-head{
+        text-align: center;
+    }
+    .valeurs-head h3{
+        font-size: 15px;
+        padding: 0;
+    }
+    #valeurs .text, #heros-info .text{
+        padding-right: 0;
+    }
+    #valeurs .video iframe{
+        width: 320px;
+    }
+
+    /* mobile fondations */
+
+    #fondations{
+        text-align: center;
+        padding-top: 67px;
+    }
+    #fondations h1{
+        font-size: 25px;
+    }
+
+    #fondations h3{
+        font-size: 15px;
+    }
+
+    /* mobile entourage */
+    #entourage .entourage-head{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    #entourage .entourage-image2{
+        margin-top: 30px;
+        margin-left: 0;
+        margin-bottom: 18px;
+    }
+
+    #entourage h1{
+        font-size: 25px;
+        margin-bottom: 26px;
+    }
+
+    #entourage .entourage3-img{
+        display: flex;
+        justify-content: center;
+        width: 43%;
+        margin: 0 auto;
+    }
+
+    #avengers,#univers{
+        display: none;
+    }
+
+}
